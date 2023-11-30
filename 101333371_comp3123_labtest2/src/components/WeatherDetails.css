@@ -1,0 +1,45 @@
+.weather-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.weather-detail-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.weather-detail-title {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.weather-detail-value {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.weather-details-error {
+    color: #ff6b6b; /* Error color */
+    text-align: center;
+}
+
+/* Add responsive design adjustments as needed */
+@media (max-width: 768px) {
+    .weather-detail-item {
+        flex-basis: 50%; /* Adjust to stack items in smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .weather-detail-item {
+        flex-basis: 100%; /* Each item takes full width on very small screens */
+    }
+}

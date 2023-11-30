@@ -1,0 +1,71 @@
+.App {
+  background-image: url("image/DALL·E 2023-11-30 16.56.45 - A serene and professional-looking background for a weather application. The background features a gradient sky from morning blue to sunset orange, wit.png") ; /* Example background color */
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.weather-forecast-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-card {
+  flex-basis: calc(20% - 20px);
+  background: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 18%;
+  margin: 0 auto;
+}
+
+.forecast-date {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.forecast-icon {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.forecast-temps {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.temp-max {
+  color: #ff8c00;
+}
+
+.temp-min {
+  color: #1e90ff;
+}
+
+
+@media (max-width: 768px) {
+  .forecast-container {
+    flex-direction: column;
+  }
+
+  .forecast-card {
+    flex-basis: 80%;
+  }
+}

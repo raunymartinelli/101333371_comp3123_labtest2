@@ -1,0 +1,47 @@
+
+.forecast-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, #83a4d4, #b6fbff);
+    padding: 1rem;
+}
+
+.forecast-card {
+    flex: 1 0 18%;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    margin: 0.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.forecast-card:hover {
+    transform: translateY(-5px);
+}
+
+
+@media (max-width: 1024px) {
+    .forecast-card {
+        flex-basis: 22%;
+    }
+}
+
+@media (max-width: 768px) {
+    .forecast-card {
+        flex-basis: 45%; /* Increase width for mobile screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .forecast-card {
+        flex-basis: 90%; /* Full width for very small screens */
+    }
+}
+
+/* Additional styles for forecast elements can be added here */
+
